@@ -160,13 +160,17 @@ ul {
 .box_title > a {
 	text-decoration: none;
 	color: white;
+	text-shadow: 2px 2px black, 2px 2px 2px black, 2px 2px 2px black,
+		2px 2px 2px black;
 }
 .box_title > a:hover {
 	text-decoration: underline;
 }
 
 .box_info {
-	color: #ffb703;
+	color: white;
+	text-shadow: 2px 2px black, 2px 2px 2px black, 2px 2px 2px black,
+		2px 2px 2px black;
 	font-size: small;
 }
 
@@ -182,6 +186,9 @@ ul {
 
 .box_content {
 	color: white;
+	text-shadow: 2px 2px black, 2px 2px 2px black, 2px 2px 2px black,
+		2px 2px 2px black;
+
 	padding-top: 5px;
 	font-size: smaller;
 	text-align: justify;
@@ -377,4 +384,38 @@ footer a:hover{
 }
 .form-section button:hover {
 	background: #023047;
+}
+
+/*Review*/
+.review-section {
+	margin: 15px;
+	display: grid;	
+	grid-template-columns: auto 100%;
+}
+.review_leftcol	{
+	margin: 5px;
+	font-size: large;
+	color: white;
+	align-content: center;
+	text-align: center;
+}
+.review_rightcol{
+	margin: 5px;
+	color: white;
+	align-items: center;
+}
+.postedDate	{
+	font-size: small;
+	color: lightgrey;
+	padding-bottom: 10px;
+}
+.avatar{
+	width: 150px;
+	height: 150px;
+	border-radius: 5px;	
+}
+.persona_name {
+	color: #ffb703;
+	font-size: large;
+	font-weight: 500;
 }
