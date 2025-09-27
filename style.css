@@ -1,0 +1,380 @@
+.testColor {
+	color: #92140c, #023047, #8ecae6, #219ebc, #ffb703, #fb8500;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #023047;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+.banner {
+	width: 100%;
+	height: 120px;
+	color: white;
+	text-align: center;
+	align-content: center;
+	font-size: xxx-large;
+	font-weight: bolder;
+	text-transform: uppercase;
+	background-image: url("./images/banner.webp");
+	background-position: center;
+	background-size: cover;
+	text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+}
+
+.region_title {
+	margin: 10px;
+	text-shadow: 0 0 4px white;
+	font-size: x-large;
+}
+
+/*MENU*/
+.menu-ngang {
+	border-radius: 0 0 12px 12px;
+	background: linear-gradient(90deg, #30638eff 0%, #003d5bff 100%);
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.menu-ngang > img {
+	float: left;
+	width: 100px;
+	height: 40px;
+}
+
+.menu-ngang > li {
+	display: inline-block;
+	position: relative;
+}
+
+.menu-ngang a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+	border-radius: 8px 8px 0 0;
+}
+
+.menu-ngang a:hover {
+	background: #00798cff;
+}
+
+/* submenuuuuuu */
+.menu-ngang ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #30638eff;
+	min-width: 150px;
+}
+
+.menu-ngang ul li {
+	display: block;
+	border-radius: 8px 8px 0 0;
+}
+
+.menu-ngang li:hover > ul {
+	display: block;
+}
+
+.menu-ngang ul ul {
+	left: 100%;
+	top: 0;
+}
+
+/**/
+.container {
+	gap: 24px;
+	padding: 10px 18px;
+	max-width: 1200px;
+	margin: 0px auto 50px auto;
+	background: #219ebc;
+	padding: 10px;
+	border-radius: 14px;
+}
+
+/*CATEGORY HEADERS */
+.header_image {
+	width: 100%;
+	height: 200px;
+	gap: 24px;
+	padding: 10px 18px;
+	margin: 0 auto;
+	max-width: 1200px;
+	border-radius: 14px;
+
+	align-content: center;
+	background-size: cover;
+	background-color: #92140c33;
+	background-blend-mode: lighten;
+}
+
+.header_title {
+	background-color: #8ecae6bb;
+	color: #023047;
+	font-size: xx-large;
+	font-weight: bolder;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 0 8px #ffb703, 0 0 8px #ffb703, 0 0 8px #ffb703,
+		0 0 8px #ffb703;
+	margin: 0px 50px;
+	padding: 5px;
+	border-radius: 14px 14px 0 0;
+}
+
+.header_description {
+	background-color: #8ecae6bb;
+	color: black;
+	text-align: justify;
+	margin: 0px 50px;
+	padding: 10px 30px;
+}
+
+/*CATEGORY GAME BOX*/
+.box {
+	align-content: center;
+	background-size: cover;
+	border-radius: 14px;
+	background-color: #ffb703;
+	padding: 10px 20px;
+	margin: 5px;
+	width: 30vw;
+	min-height: 200px;
+}
+.box_title {
+	color: white;
+	font-size: x-large;
+	margin-bottom: 10px;
+}
+.box_title > a {
+	text-decoration: none;
+	color: white;
+}
+.box_title > a:hover {
+	text-decoration: underline;
+}
+
+.box_info {
+	color: #ffb703;
+	font-size: small;
+}
+
+.box:hover {
+	opacity: 75%;
+}
+
+.text_price {
+	font-weight: bolder;
+	font-size: larger;
+	color: yellow;
+}
+
+.box_content {
+	color: white;
+	padding-top: 5px;
+	font-size: smaller;
+	text-align: justify;
+}
+
+/*RATING STARS*/
+.checked {
+	color: orange;
+}
+.rating_5::before {
+	content: "★★★★★";
+	color: yellow;
+}
+.rating_4::before {
+	content: "★★★★☆";
+	color: yellow;
+}
+.rating_3::before {
+	content: "★★★☆☆";
+	color: yellow;
+}
+.rating_2::before {
+	content: "★★☆☆☆";
+	color: yellow;
+}
+.rating_1::before {
+	content: "★☆☆☆☆";
+	color: yellow;
+}
+
+.rating_0::before {
+	content: "☆☆☆☆☆";
+	color: yellow;
+}
+
+/*HOME GAME BOX*/
+.game_box {
+	background-color: #30638eff;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: 1px #023047 solid;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 5px 5px 5px gainsboro;
+}
+.game_title {
+	color: white;
+	text-align: center;
+	font-size: x-large;
+	text-transform: capitalize;
+	text-shadow: 2px 2px 4px #92140c;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	margin-bottom: 5px;
+}
+
+.game_description {
+	color: white;
+	text-align: justify;
+	font-weight: lighter;
+	font-family: sans-serif;
+	font-size: smaller;
+}
+
+footer {
+	background: linear-gradient(90deg, #30638eff 0%, #003d5bff 100%);
+	color: white;
+	text-align: center;
+	padding: 10px;
+	border-radius: 18px 18px 0 0;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer a{
+	color:white;
+	font-size: small;
+}
+footer a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+
+/*NEWS BOX*/
+.news {
+	background-color: #30638eff;
+	border-radius: 14px;
+	display: grid;
+	grid-template-columns: auto 2fr;
+	margin: 10px;
+	
+	box-shadow: 5px 5px 5px gainsboro;
+}
+
+.news-img {
+	padding: 10px;
+}
+.news-img img {
+	width: 250px;
+	border-radius: 8px;
+}
+
+.news-description {
+	padding: 10px;
+	display: grid;
+	grid-template-rows: 1fr auto 2fr 1fr;
+	-ms-grid-row-align: stretch;
+}
+.news-time {
+	font-size: x-small;
+	color: white;
+}
+.news-category {
+	font-size: small;
+	text-transform: uppercase;
+	color: white;
+}
+.news-title {
+	font-size: large;
+	font-weight: bold;
+	margin-bottom: 10px;;
+}
+.news-title > a{
+	text-decoration: none;
+	color: #ffb703;
+	text-transform: uppercase;
+}
+.news-title > a:hover{
+	text-decoration: underline;
+}
+
+.news-info{
+	color:lemonchiffon;
+	font-style: italic;
+	font-size: small;
+	justify-content: stretch;	
+	height: 100%;
+}
+.news-author{
+	color: white	;
+}
+/*Contact*/
+.form-section {
+	margin: 24px 18px;
+	padding: 28px 24px;
+	background: #fff;
+	border-radius: 14px;
+	box-shadow: 0 2px 12px rgba(78, 84, 200, 0.08);
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form-section h2 {
+	color: #023047;
+	margin-bottom: 18px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	text-align: center;
+}
+.form-section form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.form-section input,
+.form-section textarea {
+	border: 1px solid #023047;
+	border-radius: 8px;
+	padding: 12px;
+	font-size: 1rem;
+	outline: none;
+	transition: border 0.2s;
+	background: #ceeaf7;
+}
+.form-section input:focus,
+.form-section textarea:focus {
+	border-color: #023047;
+}
+.form-section button {
+	padding: 12px;
+	background: linear-gradient(90deg, #023047 0%, #8ecae6 100%);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 1.05rem;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.form-section button:hover {
+	background: #023047;
+}
